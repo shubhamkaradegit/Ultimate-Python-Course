@@ -1,0 +1,48 @@
+s = { 10 ,10,20,67,89,5,5,5,5}
+
+e = set()  # empty set
+
+print(type(s))
+print(s)
+
+# Adding elements to a set
+s.add(100)
+print(s)
+
+# Removing elements from a set
+s.remove(10)
+print(s)
+
+# Checking if an element is in the set
+print(20 in s)
+
+# Union of sets
+s2 = {1, 2, 3}
+print(s.union(s2))
+
+# Intersection of sets
+s3 = {20, 67, 100}
+print(s.intersection(s3))
+
+# Difference of sets
+print(s.difference(s3))
+
+# Symmetric difference of sets
+print(s.symmetric_difference(s3))
+
+# Clearing a set
+# s.clear()
+
+# print(s)
+
+#remove
+s.discard(100)
+print(s)
+#s.remove(100) # throws an error if the element is not present in the set
+print(s)
+
+s4 = {1 ,23, 45}
+s5 = {1 ,45,78,90,54}
+
+print(s4-s5)
+print({1,23}.issubset(s4))
